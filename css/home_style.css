@@ -1,0 +1,810 @@
+
+@media (min-width: 100px) {
+    .navbar-div{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        padding-top: 56px;
+        padding-left: 18px;
+        padding-right: 30px;
+        padding-bottom: 8px;
+        background: #B4E7E1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 3;
+    }
+    .navbar-items{
+        width: 100%;
+        display: flex;
+    }
+
+    .menu-button-link{
+        display: flex;
+        position: relative;
+        margin-top: 14px;
+        margin-left: auto;
+        height: 18px;
+        display: flex;
+        z-index: 3;
+    }
+    .menu-button-icon{
+        width: 29px;
+        height: 18px;
+        background-image: url('../icons/menu-not-active-icon.svg');
+        transition: all 0.2s ease;
+    }
+    .menu-button-icon:hover{
+        width: 30px;
+        height: 18px;
+        background-image: url('../icons/menu-active-icon.svg');
+        transition: all 0.2s ease;
+    }
+
+    .menu-button-icon:active{
+        filter: brightness(90%);
+    }
+
+
+    .decor-navbar{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .greeting-message-and-question-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 148px;
+        margin-left: 4px;
+    }
+    .greeting-message-contaier{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+    .message-text{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        margin-top: auto;
+    }
+    .hello-text{
+        color: #419E81;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        margin-right: 4px;
+        margin-bottom: 0px;
+    }
+    .user-name{
+        color: #419E81;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .sign{
+        color: #419E81;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .greeting-decor{
+        position: relative;
+        margin-bottom: 6px;
+    }
+
+    .question-to-user{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 0px;
+        margin-top: -14px;
+    }
+
+
+    .my-courses-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 3px;
+        margin-left: 4px;
+    }
+
+    .my-courses-text{
+        position: relative;
+        display: flex;
+        margin-top: auto;
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+
+    .my-courses-decor{
+        position: relative;
+        margin-bottom: 2.1px;
+    }
+
+    .recently-viewed-view-all-container{
+        position: relative;
+        margin-top: -8px;
+        margin-left: 4px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 32%
+    }
+
+    .recently-viewed-text{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+
+    .view-all-btn{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding-top: 7px;
+        padding-bottom: 5px;
+        padding-right: 43px;
+        padding-left: 12px;
+        background: #01CEB6;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .view-all-text-container{
+        position: relative;
+        display: flex;
+        gap: 2px;
+        align-items: center;
+    }
+
+    .view-all-text{
+       color: white;
+       position: relative;
+       margin-top: 2px;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 0px;
+        transition: all 0.2s ease;
+    }
+
+
+    .view-all-icon{
+        width: 15px;
+        height: 13px;
+        background-image: url('../icons/view-all-btn-arrow-not-active.svg');
+        transition: all 0.2s ease;
+    }
+
+    .view-all-btn-decor{
+        position: absolute;
+        bottom: -1px;
+        right: 1px;
+    }
+
+
+    .view-all-btn-decor{
+        transition: all 0.2s ease;
+    }
+
+    .view-all-btn:hover{
+        background: white;
+        border: 2px solid #01CEB6;
+
+        .view-all-text{
+            color: #01CEB6;
+        }
+
+        .view-all-icon{
+            width: 15px;
+            height: 13px;
+            background-image: url('../icons/view-all-btn-arrow-active.svg');
+        }
+    }
+    
+    .view-all-text:active, .view-all-icon:active, .view-all-btn-decor:active{
+        filter: brightness(90%);
+    }
+
+
+
+    .recently-viewed-courses-container{
+        width: 100%;
+       position: relative;
+       display: flex;
+       flex-direction: row;
+       margin-top: 0 auto;
+       margin-top: 18px;
+       justify-content: center;
+       gap: 10%;
+    }
+
+    .recently-viewed-course-container{
+        width: 150px;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .recently-viewed-course-cover{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cover-carton-decor-div{
+        width: 16px;
+        height: 225px;
+        background: #01CEB6;
+        position: absolute;
+        left: 0px;
+        z-index: 2;
+    }
+
+    .recently-viewed-course-cover{
+        width: 150px;
+        height: 225px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    .recently-viewed-course-name{
+        text-align: center;
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+
+
+    .my-plans-title{
+        position: relative;
+        margin-top: 30px;
+        margin-left: 4px;
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 14px;
+    }
+
+    .plan-book-bckgr-div{
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 342px;
+        height: 351px;
+        background-image: url('../img/my-plans-for-today-book-main.svg');
+    }
+
+    .turn-date-date-month-decoration-container{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .turn-to-previous-date-link{
+        background: transparent;
+        position: relative;
+        margin-top: 4px;
+        margin-left: 4px;
+        width: 10px;
+        height: 58px;
+    }
+
+    .date-and-month-container{
+        position: relative;
+        margin-left: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .date{
+        color: #12AC7B;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 32px;
+        font-weight: 800;
+        margin-top: 8px;
+        margin-bottom: -18px;
+    }
+
+    .month{
+        color: #12AC7B;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .decoration-for-page{
+        position: relative;
+        display: flex;
+        margin-top: 18px;
+        margin-left: auto;
+        width: 120.29px;
+        height: 48px;
+    }
+
+    .turn-to-next-date-link{
+        background: transparent;
+        position: relative;
+        margin-top: 4px;
+        margin-left: 4px;
+        width: 12px;
+        height: 58px;
+    }
+
+    .plans-for-today{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 14px;
+        padding-left: 16px;
+        padding-bottom: 14px;
+        gap: 4px;
+        margin: 0 auto;
+        margin-top: 3px;
+        flex-direction: column;
+        background: #EBD7B1;
+        border-radius: 8px;
+        width: 318px;
+        height: 199px;
+        overflow: scroll;
+    }
+
+    .plans-for-today::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+        background-color: transparent;
+    }
+    .plans-for-today::-webkit-scrollbar-thumb{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .plans-for-today::-webkit-scrollbar-track{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+
+    .plan-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .time-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .time-begin-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .time-finish-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hour-begin-text{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .hour-finish-text{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .two-dots-text{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .minute-begin-text{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .minute-finish-text{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .miuns-till-time{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .activity-name{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+
+    .edit-my-plans-btn{
+        position: absolute;
+        top: 200px;
+        right: 25px;
+        width: 35px;
+        height: 35px;
+        padding: 9px;
+        border-radius: 4px;
+        background: #01CEB6;
+        transition: all 0.2s ease;
+        z-index: 2;
+        
+    }
+
+    .edit-my-plans-icon{
+        position: relative;
+        margin: 0 auto;
+        width: 18px;
+        height: 18px;
+        background-image: url('../icons/edit-my-plans-icon-not-active.svg');
+        background-size: contain;
+    }
+
+    .edit-my-plans-btn:hover{
+        background: white;
+    
+        .edit-my-plans-icon{
+            position: relative;
+            margin: 0 auto;
+            background-image: url('../icons/edit-my-plans-icon-active.svg');
+            background-size: contain;
+        }
+    }
+
+    .notes-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 6px;
+        padding-left: 9px;
+        padding-bottom: 18px;
+        gap: 4px;
+        margin: 0 auto;
+        margin-top: 10px;
+        flex-direction: column;
+        background: #E4C994;
+        border-radius: 8px;
+        width: 318px;
+        height: 60px;
+        overflow: scroll;
+    }
+
+    .notes-title{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .notes{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        margin-top: -7px;
+    }
+
+    .notes-container::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+        background-color: transparent;
+    }
+    .notes-container::-webkit-scrollbar-thumb{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .notes-container::-webkit-scrollbar-track{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .new-courses-and-slogan-container{
+        position: relative;
+        margin-top: 30px;
+        margin-left: 4px;
+    }
+
+    .new-courses{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+
+    .slogan-text{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: -5px;
+    }
+
+    .new-courses-container{
+        width: 100%;
+       position: relative;
+       display: flex;
+       flex-direction: row;
+       margin-top: 0 auto;
+       margin-top: 18px;
+       justify-content: center;
+       gap: 10%;
+       margin-bottom: 150px;
+    }
+
+    .new-course-container{
+        cursor: pointer;
+        width: 150px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .new-course-cover-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cover-carton-decor-div{
+        width: 16px;
+        height: 225px;
+        background: #01CEB6;
+        position: absolute;
+        left: 0px;
+        z-index: 2;
+    }
+
+    .new-course-cover{
+        width: 150px;
+        height: 225px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    .new-text-div{
+        position: absolute;
+        padding-left: 5px;
+        padding-right: 5px;
+        top: 0px;
+        right: 9px;
+        z-index: 2;
+        background: #CF0609;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+
+    .new-text{
+        text-align: center;
+        color: white;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 2px;
+        margin-bottom: 0px;
+    }
+
+    .new-course-name{
+        text-align: center;
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+    .img-bottom-decor{
+        width: 100%;
+        height: 179px;
+        position: fixed;
+        bottom: -4px;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        background-image: url('../img/register-bottom-decor.svg');
+        background-size: contain;
+        z-index: 3;
+    }
+
+
+}
+
+@media (min-width: 576px){
+    .recently-viewed-view-all-container{
+        position: relative;
+        margin-top: -8px;
+        margin-left: 4px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50%
+    }
+    .recently-viewed-courses-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin-top: 18px;
+        margin-left: 2px;
+        justify-content: start;
+        gap: 5%;
+    }
+
+    .new-courses-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin-top: 18px;
+        margin-left: 2px;
+        justify-content: start;
+        gap: 5%;
+    }
+    .img-bottom-decor{
+        width: 100%;
+        height: 179px;
+        position: fixed;
+        bottom: -4px;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        background-image: url('../img/register-bottom-decor.svg');
+        background-size: contain;
+    }
+
+    .new-courses-container{
+        margin-bottom: 170px;
+     }
+
+    
+}
+
+@media (min-width: 768px){
+    .recently-viewed-view-all-container{
+        position: relative;
+        margin-top: -8px;
+        margin-left: 4px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 65%
+    }
+    .recently-viewed-courses-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin-top: 18px;
+        margin-left: 2px;
+        justify-content: start;
+        gap: 5%;
+     }
+     .img-bottom-decor{
+        width: 100%;
+        height: 179px;
+        position: fixed;
+        bottom: -4px;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        background-image: url('../img/register-bottom-decor.svg');
+        background-size: contain;
+    }
+
+     .new-courses-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin-top: 18px;
+        margin-left: 2px;
+        justify-content: start;
+        gap: 5%;
+    }
+
+    .new-courses-container{
+        margin-bottom: 170px;
+     }
+
+}
+
+@media (min-width: 992px) {
+
+    .recently-viewed-view-all-container{
+        position: relative;
+        margin-top: -8px;
+        margin-left: 4px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 80%
+    }
+
+    .recently-viewed-courses-container{
+       position: relative;
+       display: flex;
+       flex-direction: row;
+       margin-top: 18px;
+       margin-left: 2px;
+       justify-content: start;
+       gap: 3%;
+    }
+    .new-courses-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin-top: 18px;
+        margin-left: 2px;
+        justify-content: start;
+        gap: 5%;
+    }
+
+    .img-bottom-decor{
+        width: 100%;
+        height: 179px;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        background-image: url('../img/register-bottom-decor.svg');
+        background-size: contain;
+    }
+
+    .new-courses-container{
+        margin-bottom: 200px;
+     }
+
+
+}

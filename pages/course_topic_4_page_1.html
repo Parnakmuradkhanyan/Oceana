@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="../js/manifest.webmanifest">
+    <link rel="shortcut icon" href="../icons/website-icon.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../icons/website-icon.svg">
+    <link rel="apple-touch-icon" sizes="152x152" href="../icons/152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../icons/167.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/course_topic_4_page_1_style.css">
+    <title>Ocean of the Knowledge - Course</title>
+</head>
+<body>
+    <div class="navbar-div">
+        <div class="navbar-items">
+            <a href="./home.html" class="logo-link-home"><img src="../img/menu-logo.svg" alt="Logo" class="logo-navbar"></a>
+            <a href="./menu.html" class="menu-button-link"><div class="menu-button-icon"></div></a>
+        </div>
+        <img src="../img/menu-bottom-decor.svg" alt="" class="decor-navbar">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="arrow-topic-courses-container">
+                    <a href="./course_view_topics.html" class="link-arrow-back-home"><img src="../icons/arrow-back-to-main-page.svg" alt="" class="icon-arrow-back-home"></a>
+                    <div class="topic-number-topic-name-container">
+                        <p class="topic-number">Topic 4.</p>
+                        <p class="topic-name">Going to the zoo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="exercise-container">
+                    <div class="exercise-number-and-task-container">
+                        <p class="exercise-number">Ex.1</p>
+                        <p class="task">Watch the inrtoductional video</p>
+                    </div>
+                    <iframe class="video-div" src="https://www.youtube.com/embed/y699qXKDVwE?si=fvGlB-BzsOTTuZpr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="exercise-container">
+                    <div class="exercise-number-and-task-container">
+                        <p class="exercise-number">Ex.2</p>
+                        <p class="task">Let's learn new words</p>
+                    </div>
+
+                    <div class="new-word-all-container">
+                        <div class="new-word-pic-container" id="word-pic-container">
+                            <button class="btn-previous-pic" onclick="previousWord()"><div class="previous-word-pic-btn-icon"></div></button>
+                            <button class="btn-next-pic" onclick="nextWord()"><div class="next-word-pic-btn-icon"></div></button>
+                        </div>
+                        <div class="new-word-and-speak-container">
+                            <div class="new-word-container">
+                                <p class="new-word-text" id="new-word-text">Zoo</p>
+                                <p class="translation-text" id="translation-text">- зоопарк</p>
+                            </div>
+                            <button class="say-the-word-btn" onclick="playAudio()"></button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="exercise-container">
+                    <div class="exercise-number-and-task-container">
+                        <p class="exercise-number">Ex.3</p>
+                        <p class="task">Let's learn new words</p>
+                    </div>
+                    
+                    <div class="container words-to-match-container">
+                        <div class="row words-to-match-row">
+                            <div class="col-4 words-to-match-column">
+                                <div class="word-to-match-div" draggable="true" ondragstart="drag(event)" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)" ontouchend="touchEnd(event)" id="tiger"><p class="word-to-match-text">tiger</p></div>
+                            </div>
+                            <div class="col-4 words-to-match-column">
+                                <div class="word-to-match-div" draggable="true" ondragstart="drag(event)" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)" ontouchend="touchEnd(event)" id="elephant"><p class="word-to-match-text">elephant</p></div>
+                            </div>
+                            <div class="col-4 words-to-match-column">
+                                <div class="word-to-match-div" draggable="true" ondragstart="drag(event)" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)" ontouchend="touchEnd(event)" id="lion"><p class="word-to-match-text">lion</p></div>
+                            </div>
+                        </div>
+                        <div class="row words-to-match-row">
+                            <div class="col-4 words-to-match-column">
+                                <div class="word-to-match-div" draggable="true" ondragstart="drag(event)" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)" ontouchend="touchEnd(event)" id="snake"><p class="word-to-match-text">snake</p></div>
+                            </div>
+
+                            <div class="col-4 words-to-match-column">
+                                <div class="word-to-match-div" draggable="true" ondragstart="drag(event)" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)" ontouchend="touchEnd(event)" id="monkey"><p class="word-to-match-text">monkey</p></div>
+                            </div>
+
+                            <div class="col-4 words-to-match-column">
+                                <div class="word-to-match-div" draggable="true" ondragstart="drag(event)" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)" ontouchend="touchEnd(event)" id="zoo"><p class="word-to-match-text">zoo</p></div>
+                            </div>
+                        </div>
+                        <div class="row words-to-match-row">
+                            <div class="col-4 words-to-match-column">
+                                <div class="word-to-match-div" draggable="true" ondragstart="drag(event)" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)" ontouchend="touchEnd(event)" id="giraffe"><p class="word-to-match-text">giraffe</p></div>
+                            </div>
+
+                            <div class="col-4 words-to-match-column">
+                                <div class="word-to-match-div" draggable="true" ondragstart="drag(event)" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)" ontouchend="touchEnd(event)" id="crocodile"><p class="word-to-match-text">crocodile</p></div>
+                            </div>
+
+                            <div class="col-4 words-to-match-column">
+                                <div class="word-to-match-div" draggable="true" ondragstart="drag(event)" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)" ontouchend="touchEnd(event)" id="panda"><p class="word-to-match-text">panda</p></div>
+                            </div>
+                        </div>
+                        <div class="row words-to-match-row">
+                            <div class="col-4 words-to-match-column">
+                                <div class="word-to-match-div" draggable="true" ondragstart="drag(event)" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)" ontouchend="touchEnd(event)" id="turtle"><p class="word-to-match-text">turtle</p></div>
+                            </div>
+
+                            <div class="col-4 words-to-match-column">
+                                <div class="word-to-match-div" draggable="true" ondragstart="drag(event)" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)" ontouchend="touchEnd(event)" id="bear"><p class="word-to-match-text">bear</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container pictures-and-matches-div">
+                        <div class="row pictures-and-matches-row">
+                            <div class="col-6 picture-and-match-column">
+                                <img src="../img/match-pictures-and-words/zoo-match-pic.svg" alt="" class="picture-for-word">
+                                <div id="zoo-match-div" class="match-for-word-div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            </div>
+                            <div class="col-6 picture-and-match-column">
+                                <img src="../img/match-pictures-and-words/tiger-match-pic.svg" alt="" class="picture-for-word">
+                                <div id="tiger-match-div" class="match-for-word-div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            </div>
+                        </div>
+                        <div class="row pictures-and-matches-row">
+                            <div class="col-6 picture-and-match-column">
+                                <img src="../img/match-pictures-and-words/lion-match-pic.svg" alt="" class="picture-for-word">
+                                <div id="lion-match-div" class="match-for-word-div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            </div>
+                            <div class="col-6 picture-and-match-column">
+                                <img src="../img/match-pictures-and-words/giraffe-match-pic.svg" alt="" class="picture-for-word">
+                                <div id="giraffe-match-div" class="match-for-word-div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            </div>
+                        </div>
+                        <div class="row pictures-and-matches-row">
+                            <div class="col-6 picture-and-match-column">
+                                <img src="../img/match-pictures-and-words/bear-match-pic.svg" alt="" class="picture-for-word">
+                                <div id="bear-match-div" class="match-for-word-div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            </div>
+                            <div class="col-6 picture-and-match-column">
+                                <img src="../img/match-pictures-and-words/panda-match-pic.svg" alt="" class="picture-for-word">
+                                <div id="panda-match-div" class="match-for-word-div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            </div>
+                        </div>
+                        <div class="row pictures-and-matches-row">
+                            <div class="col-6 picture-and-match-column">
+                                <img src="../img/match-pictures-and-words/monkey-match-pic.svg" alt="" class="picture-for-word">
+                                <div id="monkey-match-div" class="match-for-word-div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            </div>
+                            <div class="col-6 picture-and-match-column">
+                                <img src="../img/match-pictures-and-words/snake-match-pic.svg" alt="" class="picture-for-word">
+                                <div id="snake-match-div" class="match-for-word-div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            </div>
+                        </div>
+                        <div class="row pictures-and-matches-row">
+                            <div class="col-6 picture-and-match-column">
+                                <img src="../img/match-pictures-and-words/turtle-match-pic.svg" alt="" class="picture-for-word">
+                                <div id="turtle-match-div" class="match-for-word-div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            </div>
+                            <div class="col-6 picture-and-match-column">
+                                <img src="../img/match-pictures-and-words/crocodile-match-pic.svg" alt="" class="picture-for-word">
+                                <div id="crocodile-match-div" class="match-for-word-div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="check-the-answers-btn" onclick="checkAnswers()">Check the answers</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="exercise-container">
+                    <div class="exercise-number-and-task-container big-exercise">
+                        <p class="exercise-number">Ex.4</p>
+                        <p class="task">Listen and choose the correct answer</p>
+                    </div>
+    
+                    <div class="player">
+                        
+                        <div class="time-of-audio-input-range-div">
+                            <div class="time-of-audio">
+                                <div class="current-time">0:00</div>
+                                <diV class="slash">/</diV>
+                                <div class="total-duration">0:00</div>
+                            </div>
+                            <input type="range" id="seek" min="0" max="100" value="0" onchange="seekTo()">
+                        </div>
+                       
+                        <button id="play" class="play-audio-btn" onclick="playPauseTrack()"><div class="btn-player-icon"></div></button>
+                
+                    </div>
+
+                    <div class="test-container-div">
+                        <div class="questions-container">
+
+                            <div class="quesion-container">
+
+                                <p class="question-text">What is the name of the zoo?</p>
+
+                                <ul class="answers-container">
+                                    <li class="answer-container">
+                                        <input type="checkbox" name="" id="answer_1_1" class="answer-test-checkbox"><p class="answer-text">Jungle Something</p>
+                                    </li>
+                                    <li class="answer-container">
+                                        <input type="checkbox" name="" id="answer_1_2" class="answer-test-checkbox"><p class="answer-text">Jungle Hill</p>
+                                    </li>
+                                    <li class="answer-container">
+                                        <input type="checkbox" name="" id="answer_1_3" class="answer-test-checkbox"><p class="answer-text">Jungle Bell</p>
+                                    </li>
+                                </ul>
+
+                                <button class="check-the-question-answer-btn" onclick="checkQuestionAnswer()">Check the answer</button>
+                                
+                            </div>
+
+                            <div class="quesion-container">
+
+                                <p class="question-text">What is the number of different kinds of animals?</p>
+                                
+                                <ul class="answers-container">
+                                    <li class="answer-container">
+                                        <input type="checkbox" name="" id="answer_2_1" class="answer-test-checkbox"><p class="answer-text">100 kinds</p>
+                                    </li>
+                                    <li class="answer-container">
+                                        <input type="checkbox" name="" id="answer_2_2" class="answer-test-checkbox"><p class="answer-text">89 kinds</p>
+                                    </li>
+                                    <li class="answer-container">
+                                        <input type="checkbox" name="" id="answer_2_3" class="answer-test-checkbox"><p class="answer-text">18 kinds</p>
+                                    </li>
+                                </ul>
+
+                                <button class="check-the-question-answer-btn" onclick="checkQuestionAnswer()">Check the answer</button>
+                                
+                            </div>
+
+                            <div class="quesion-container">
+
+                                <p class="question-text">Who can they give food to?</p>
+                                
+                                <ul class="answers-container">
+                                    <li class="answer-container">
+                                        <input type="checkbox" name="" id="answer_3_1" class="answer-test-checkbox"><p class="answer-text">Parrots</p>
+                                    </li>
+                                    <li class="answer-container">
+                                        <input type="checkbox" name="" id="answer_3_2" class="answer-test-checkbox"><p class="answer-text">Tigers</p>
+                                    </li>
+                                    <li class="answer-container">
+                                        <input type="checkbox" name="" id="answer_3_3" class="answer-test-checkbox"><p class="answer-text">Pandas</p>
+                                    </li>
+                                </ul>
+
+                                <button class="check-the-question-answer-btn" onclick="checkQuestionAnswer()">Check the answer</button>
+                                
+                            </div>
+
+                            <div class="quesion-container">
+
+                                <p class="question-text">Where is the store next to?</p>
+                                
+                                <ul class="answers-container">
+                                    <li class="answer-container">
+                                        <input type="checkbox" name="" id="answer_4_1" class="answer-test-checkbox"><p class="answer-text">Next to the zoo</p>
+                                    </li>
+                                    <li class="answer-container">
+                                        <input type="checkbox" name="" id="answer_4_2" class="answer-test-checkbox"><p class="answer-text">Next to the station</p>
+                                    </li>
+                                    <li class="answer-container">
+                                        <input type="checkbox" name="" id="answer_4_3" class="answer-test-checkbox"><p class="answer-text">Next to the cafe</p>
+                                    </li>
+                                </ul>
+
+                                <button class="check-the-question-answer-btn" onclick="checkQuestionAnswer()">Check the answer</button>
+                                
+                            </div>
+
+                            <div class="quesion-container">
+
+                                <p class="question-text">What do they want to eat on the train?</p>
+                                
+                                <ul class="answers-container">
+                                    <li class="answer-container">
+                                        <input type="checkbox" name="" id="answer_5_1" class="answer-test-checkbox"><p class="answer-text">Burgers and lemonade</p>
+                                    </li>
+                                    <li class="answer-container">
+                                        <input type="checkbox" name="" id="answer_5_2" class="answer-test-checkbox"><p class="answer-text">Pasta and juice</p>
+                                    </li>
+                                    <li class="answer-container">
+                                        <input type="checkbox" name="" id="answer_5_3" class="answer-test-checkbox"><p class="answer-text">French fries and ice cream</p>
+                                    </li>
+                                </ul>
+
+                                <button class="check-the-question-answer-btn" onclick="checkQuestionAnswer()">Check the answer</button>
+                                
+                            </div>
+
+
+                        </div>
+                        
+                    </div>
+    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="turn-to-pages-container">
+                        <a class="turn-to-previous-page-btn"><div class="turn-to-previous-page-icon"></div></a>
+                        <div class="page-number-text">page 1</div>
+                        <a href="./course_topic_4_page_2.html" class="turn-to-next-page-btn"><div class="turn-to-next-page-icon"></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    </div>
+
+    <audio id="audio-player" src="../audio/zoo-how-to-say.mp3"></audio>
+
+
+    <script src="../js/course_topic_4_page_1.js"></script>
+
+    <script src="../js/manifest.webmanifest"></script>
+    
+</body>
+</html>

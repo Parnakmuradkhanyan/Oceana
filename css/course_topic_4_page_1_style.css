@@ -1,0 +1,890 @@
+
+@media (min-width: 100px) {
+    .navbar-div{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        padding-top: 56px;
+        padding-left: 18px;
+        padding-right: 30px;
+        padding-bottom: 8px;
+        background: #B4E7E1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 3;
+    }
+    .navbar-items{
+        width: 100%;
+        display: flex;
+    }
+
+    .menu-button-link{
+        display: flex;
+        position: relative;
+        margin-top: 14px;
+        margin-left: auto;
+        height: 18px;
+        display: flex;
+        z-index: 3;
+    }
+    .menu-button-icon{
+        width: 29px;
+        height: 18px;
+        background-image: url('../icons/menu-not-active-icon.svg');
+        transition: all 0.2s ease;
+    }
+    .menu-button-icon:hover{
+        width: 30px;
+        height: 18px;
+        background-image: url('../icons/menu-active-icon.svg');
+        transition: all 0.2s ease;
+    }
+
+    .menu-button-icon:active{
+        filter: brightness(90%);
+    }
+
+    .decor-navbar{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .arrow-topic-courses-container{
+        position: relative;
+        margin-top: 146px;
+        margin-left: 4px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+
+    .link-arrow-back-home{
+        display: flex;
+        align-items: center;
+        transition: all 0.2s ease;
+    }
+
+    .link-arrow-back-home:hover{
+        filter: brightness(90%);
+    }
+
+    .link-arrow-back-home:active{
+        filter: brightness(80%);
+    }
+
+    .topic-number-topic-name-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .topic-number{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+
+    .topic-name{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .exercise-container{
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .exercise-number-and-task-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-left: 4px;
+    }
+
+    .exercise-number{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+
+    .task{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .video-div{
+        position: relative;
+        margin: 0 auto;
+        width: 98%;
+        height: 223px;
+        border-radius: 3px;
+    }
+
+    .new-word-all-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        justify-content: center;
+    }
+
+    .new-word-pic-container{
+        position: relative;
+        margin: 0 auto;
+        width: 98%;
+        height: 223px;
+        border-radius: 3px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-image: url('../img/new-words-pics/zoo-learn-new-word-pic.jpg');
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-previous-pic, .btn-next-pic{
+        position: relative;
+        padding: 11px 14px;
+        background: #02C7B0;
+        border: 0px solid transparent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        transition: all 0.2s ease;
+    }
+
+    .btn-next-pic{
+        margin-left: auto;
+    }
+
+    .previous-word-pic-btn-icon{
+        width: 10px;
+        height: 16px;
+        background-image: url(../icons/arrow-previous-pic-not-active.svg);
+        transition: all 0.2s ease;
+    }
+
+    .next-word-pic-btn-icon{
+        width: 10px;
+        height: 16px;
+        background-image: url(../icons/arrow-next-pic-not-active.svg);
+        transition: all 0.2s ease;
+    }
+
+    .btn-previous-pic:hover{
+        background: white;
+        .previous-word-pic-btn-icon{
+            background-image: url(../icons/arrow-previous-pic-active.svg);
+        }
+    }
+
+    .btn-next-pic:hover{
+        background: white;
+        .next-word-pic-btn-icon{
+            background-image: url(../icons/arrow-next-pic-active.svg);
+        }
+    }
+
+    .btn-next-pic:active{
+        background: white;
+        filter: brightness(90%);
+        .next-word-pic-btn-icon{
+            background-image: url(../icons/arrow-next-pic-active.svg);
+        }
+       
+    }
+
+    .btn-previous-pic:active{
+        background: white;
+        filter: brightness(90%);
+        .previous-word-pic-btn-icon{
+            background-image: url(../icons/arrow-previous-pic-active.svg);
+        }
+    }
+
+    .new-word-and-speak-container{
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        gap: 17px;
+        align-items: center;
+    }
+
+    .new-word-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .new-word-text{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+
+    .translation-text{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+
+    .say-the-word-btn{
+        width: 22px;
+        height: 18px;
+        background: transparent;
+        background-image: url(../icons/say-the-new-word-icon.svg);
+        background-size: contain;
+        border: 0px solid transparent;
+        transition: all 0.2s ease;
+    }
+
+    .say-the-word-btn:hover{
+        filter: brightness(110%);
+    }
+
+    .say-the-word-btn:active{
+        filter: brightness(90%);
+    }
+
+    .words-to-match-container{
+        width: 98%;
+        background: #EBD7B1;
+        border-radius: 3px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .words-to-match-row{
+        display: flex;
+        justify-content: center;
+    }
+
+    .words-to-match-column{
+        display: flex;
+        justify-content: center;
+    }
+
+    .word-to-match-div {
+        width: 119.36px;
+        height: 36px;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        background: white;
+        border-radius: 7px;
+        padding: 6px 4px;
+        cursor: pointer;
+    }
+    .word-to-match-text{
+        color: black;
+        text-align: center;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+
+    .pictures-and-matches-div{
+        width: 98%;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .pictures-and-matches-row{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .picture-and-match-column{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .picture-for-word{
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 6px;
+    }
+
+    .match-for-word-div{
+        position: relative;
+        margin: 0 auto;
+        width: 119.36px;
+        height: 36px;
+        background: #FFF0D3;
+        border: 1.5px solid #B0935B;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .selected {
+        border: 2px solid blue;
+    }
+    
+    
+
+    .check-the-answers-btn{
+        position: relative;
+        margin: 0 auto;
+        margin-top: 40px;
+        background: #01CEB6;
+        border: 0px solid transparent;
+        border-radius: 8px;
+        padding: 6px 14px;
+        color: white;
+        text-align: center;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        transition: all 0.2s ease;
+    }
+
+    .check-the-answers-btn:hover{
+        background: white;
+        color: #01CEB6;
+        border: 2px solid #01CEB6;
+    }
+
+    .check-the-answers-btn:active{
+        background: white;
+        color: #01CEB6;
+        border: 2px solid #01CEB6;
+        filter: brightness(90%);
+    }
+
+    .big-exercise{
+        align-items: start;
+    }
+
+    .player{
+        width: 98%;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 16px;
+        padding-top: 22px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 9px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #B4E7E1;
+    }
+
+    .time-of-audio{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .time-of-audio-input-range-div{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .current-time{
+        color: black;
+        text-align: center;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 0px;
+    }
+
+    .slash{
+        color: black;
+        text-align: center;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 0px;
+    }
+
+    .total-duration{
+        color: black;
+        text-align: center;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 0px;
+    }
+
+    .play-audio-btn{
+        position: relative;
+        margin: 0 auto;
+        width: 53px;
+        height: 53px;
+        background: #01CEB6;
+        border: 0px solid transparent;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+       
+    }
+
+    .btn-player-icon{
+        position: relative;
+        margin: 0 auto;
+        width: 17px;
+        height: 19px;
+        background-image: url('../icons/play-the-audio-not-hover-icon.svg');
+        background-size: cover;
+        transition: all 0.2s ease;
+    }
+
+    .play-audio-btn:hover{
+        background: white;
+        .btn-player-icon{
+            background-image: url('../icons/play-the-audio-hover-icon.svg');
+        }
+    }
+
+    .play-audio-btn:active{
+        background: white;
+        filter: brightness(90%);
+        .btn-player-icon{
+            background-image: url('../icons/play-the-audio-hover-icon.svg');
+        }
+        
+    }
+
+    input[type=range] {
+        width: 100%;
+        height: 8px;
+        border-radius: 3px;
+        -webkit-appearance: none;
+        background-color: white;
+        outline: none;
+    }
+    
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #01CEB6;
+        cursor: pointer;
+    }
+    
+    input[type=range] {
+        /* Добавить переменную для значения ползунка */
+        --percent: 0%;
+        /* Добавить два линейных градиента для фона */
+        background: linear-gradient(to right, #01CEB6 var(--percent), white var(--percent));
+    }
+    
+    input[type=range]:focus {
+        outline: none;
+    }
+
+    .test-container-div{
+        position: relative;
+        margin-left: 12px;
+    }
+
+    .questions-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .quesion-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .question-text{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .answers-container{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 0px;
+    }
+
+    .answer-container{
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        align-items: start;
+    }
+
+
+.answer-test-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: #B4E7E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.answer-test-checkbox.checked::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #01CEB6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.answer-test-checkbox.correct {
+    background: #01D664;
+}
+
+.answer-test-checkbox.correct::before {
+    content: '';
+    background-image: url('../icons/checkbox-correct-answer-icon.svg');
+    background-size: contain;
+    width: 12px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.answer-test-checkbox.incorrect {
+    background: #DD1919;
+}
+
+.answer-test-checkbox.incorrect::before {
+    content: '';
+    background-image: url('../icons/checkbox-incorrect-answer-icon.svg');
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    
+
+    .answer-text{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+
+    .check-the-question-answer-btn{
+        position: relative;
+        margin-right: auto;
+        margin-top: 20px;
+        background: #01CEB6;
+        border: 0px solid transparent;
+        border-radius: 8px;
+        padding: 6px 14px;
+        color: white;
+        text-align: center;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        transition: all 0.2s ease;
+    }
+
+    .check-the-question-answer-btn:hover{
+        background: white;
+        color: #01CEB6;
+        border: 2px solid #01CEB6;
+    }
+
+    .check-the-question-answer-btn:active{
+        background: white;
+        color: #01CEB6;
+        border: 2px solid #01CEB6;
+        filter: brightness(90%);
+    }
+
+    .turn-to-pages-container{
+        position: relative;
+        width: fit-content;
+        margin-left: 24px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #B4E7E1;
+        border-radius: 8px;
+    }
+
+    .turn-to-previous-page-btn{
+        position: relative;
+        padding: 10px 11px;
+        margin-right: 22px;
+        display: flex;
+        background: #80D4CB;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        transition: all 0.2s ease;
+        cursor: default;
+    }
+
+    .turn-to-previous-page-icon{
+        width: 8px;
+        height: 14px;
+        background-image: url('../icons/unavialable-turn-to-previous-page-icon.svg');
+    }
+
+
+    .page-number-text{
+        position: relative;
+        margin: 0 auto;
+        margin-right: 22px;
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .turn-to-next-page-btn{
+        position: relative;
+        padding: 10px 11px;
+        display: flex;
+        margin-left: auto;
+        background: #01CEB6;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        transition: all 0.2s ease;
+    }
+
+    .turn-to-next-page-icon{
+        width: 8px;
+        height: 14px;
+        background-image: url('../icons/turn-to-next-page-not-active-icon.svg');
+        transition: all 0.2s ease;
+    }
+    
+    .turn-to-next-page-btn:hover{
+        background: white;
+        .turn-to-next-page-icon{
+            background-image: url('../icons/turn-to-next-page-active-icon.svg');
+        }
+    }
+
+    .turn-to-next-page-btn:active{
+        background: white;
+        filter: brightness(90%);
+        .turn-to-next-page-icon{
+            background-image: url('../icons/turn-to-next-page-active-icon.svg');
+        }
+       
+    }
+
+}
+
+
+@media (min-width: 576px){
+
+    .video-div{
+        position: relative;
+        margin: 0 auto;
+        width: 94%;
+        height: 443px;
+        border-radius: 3px;
+    }
+
+    .new-word-pic-container{
+        width: 94%;
+        height: 443px;
+    }
+    .words-to-match-container{
+        width: 94%;
+        background: #EBD7B1;
+        border-radius: 3px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .word-to-match-div{
+        width: 158.16px;
+        height: 36px;
+    }
+
+    .pictures-and-matches-div{
+        width: 85%;
+    }
+
+    .player{
+        width: 94%;
+    }
+
+    
+}
+
+@media (min-width: 768px){
+
+
+    .video-div{
+        position: relative;
+        margin: 0 auto;
+        width: 94%;
+        height: 443px;
+        border-radius: 3px;
+    }
+
+    .new-word-pic-container{
+        width: 94%;
+        height: 443px;
+    }
+
+    .words-to-match-container{
+        width: 94%;
+        background: #EBD7B1;
+        border-radius: 3px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .word-to-match-div{
+        width: 158.16px;
+        height: 36px;
+    }
+
+    .match-for-word-div{
+        width: 158.16px;
+        height: 36px;
+        background: #FFF0D3;
+        border: 1.5px solid #B0935B;
+        border-radius: 8px;
+    }
+
+    .pictures-and-matches-div{
+        width: 85%;
+    }
+
+    
+    .player{
+        width: 94%;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+
+    .video-div{
+        position: relative;
+        margin: 0 auto;
+        width: 54%;
+        height: 443px;
+        border-radius: 3px;
+    }
+
+    .new-word-pic-container{
+        width: 54%;
+        height: 443px;
+    }
+
+    .words-to-match-container{
+        width: 54%;
+        background: #EBD7B1;
+        border-radius: 3px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .word-to-match-div{
+        width: 150.94px;
+        height: 36px;
+    }
+
+    .pictures-and-matches-div{
+        width: 75%;
+    }
+
+
+    .picture-for-word{
+        position: relative;
+        margin: 0 auto;
+        width: 140px;
+        height: 140px;
+        border-radius: 6px;
+    }
+
+    .match-for-word-div{
+        width: 150.94px;
+        height: 36px;
+        background: #FFF0D3;
+        border: 1.5px solid #B0935B;
+        border-radius: 8px;
+    }
+
+    
+    .player{
+        width: 54%;
+    }
+
+
+}

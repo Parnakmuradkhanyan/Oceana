@@ -1,0 +1,473 @@
+
+@media (min-width: 100px) {
+    .navbar-div{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        padding-top: 56px;
+        padding-left: 18px;
+        padding-right: 30px;
+        padding-bottom: 8px;
+        background: #B4E7E1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 3;
+    }
+    .navbar-items{
+        width: 100%;
+        display: flex;
+    }
+
+    .menu-button-link{
+        display: flex;
+        position: relative;
+        margin-top: 14px;
+        margin-left: auto;
+        height: 18px;
+        display: flex;
+        z-index: 3;
+    }
+    .menu-button-icon{
+        width: 29px;
+        height: 18px;
+        background-image: url('../icons/menu-not-active-icon.svg');
+        transition: all 0.2s ease;
+    }
+    .menu-button-icon:hover{
+        width: 30px;
+        height: 18px;
+        background-image: url('../icons/menu-active-icon.svg');
+        transition: all 0.2s ease;
+    }
+
+    .menu-button-icon:active{
+        filter: brightness(90%);
+    }
+
+    .decor-navbar{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .arrow-courses-container{
+        position: relative;
+        margin-top: 146px;
+        margin-left: 4px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .link-arrow-back-home{
+        display: flex;
+        align-items: center;
+        transition: all 0.2s ease;
+    }
+
+    .link-arrow-back-home:hover{
+        filter: brightness(90%);
+    }
+
+    .link-arrow-back-home:active{
+        filter: brightness(80%);
+    }
+
+
+    .courses-text{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .book-and-name-course-container{
+        position: relative;
+        margin: 0 auto;
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+
+    }
+
+    .book-of-course-image{
+        width: 284px;
+        height: 225px;
+        position: relative;
+        margin: 0 auto;
+
+    }
+
+
+    .course-name{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .chapters-list{
+        position: relative;
+        margin: 0 auto;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        justify-content: center;
+        padding-left: 0px;
+
+    }
+
+    .chapter-container{
+        width: 85%;
+        list-style-type: none;
+        position: relative;
+        margin: 0 auto;
+        background: #B4E7E1;
+        border-radius: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+        transition: all 0.2s ease;
+    }
+
+    .completed-chapter-div{
+        position: absolute;
+        bottom: 6px;
+        right: 4px;
+        background: #01D664;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-radius: 5px;
+    }
+
+    .completed-text{
+        color: white;
+        font-family: 'Baloo 2', sans-serif;
+        margin-bottom: 0px;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .pic-of-chapter{
+        width: 60px;
+        height: 60px;
+    }
+
+    .chapter-name-and-topics-amount-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chapter-name{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: -5px;
+        transition: all 0.2s ease;
+    }
+
+    .topics-amount-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .number-of-topics{
+        color: #41958B;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 0px;
+        transition: all 0.2s ease;
+    }
+
+    .topics-text{
+        color: #41958B;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 0px;
+        transition: all 0.2s ease;
+    }
+
+    .chapter-container:hover{
+        filter: brightness(110%);
+        cursor: pointer;
+    }
+
+    .chapter-container:active{
+        filter: brightness(90%);
+    }
+
+    .chapter-check-topics-link{
+        text-decoration: none;
+    }
+
+    .delete-or-reset-course-btn-container{
+        width: 80%;
+        position: relative;
+        background: #DD1919;
+        margin: 0 auto;
+        margin-top: 54px;
+        margin-bottom: 200px;
+        padding: 9px 20px;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        border: 0px solid transparent;
+    }
+
+    .delete-or-reset-course-text{
+        color: white;
+        text-align: center;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 0px;
+        transition: all 0.2s ease;
+    }
+
+    .delete-or-reset-course-btn-container:hover{
+        background: white;
+        border: 2px solid #DD1919;
+
+        .delete-or-reset-course-text{
+            color: #DD1919;
+        }
+    }
+
+    .delete-or-reset-course-btn-container:active{
+        filter: brightness(90%);
+    }
+
+    .img-bottom-decor{
+        width: 100%;
+        height: 179px;
+        position: fixed;
+        bottom: -4px;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        background-image: url('../img/register-bottom-decor.svg');
+        background-size: contain;
+        z-index: 3;
+    }
+
+    .delete-or-reset-or-cancel-course-container{
+        position: fixed;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 100%;
+        background: linear-gradient(180deg, rgba(94,214,172,0.8) 0%, rgba(18,87,55,0.8) 80%);
+        backdrop-filter: blur(20px);
+        border-top: 3px solid #BFF5D8;
+        border-left: 3px solid #BFF5D8;
+        border-right: 3px solid #BFF5D8;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        padding-top: 16px;
+        padding-bottom: 54px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 4;
+        visibility: hidden;
+    }
+
+    .decor-div{
+        position: relative;
+        margin: 0 auto;
+        width: 30%;
+        height: 8px;
+        background: white;
+        border-radius: 14px;
+    }
+
+    .are-you-sure-about-that-question{
+        position: relative;
+        margin: 0 auto;
+        margin-top: 25px;
+        color: white;
+        text-align: center;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .reset-delete-course-container{
+        position: relative;
+        margin: 0 auto;
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        justify-content: center;
+        margin-bottom: 28px;
+    }
+
+    .reset-course-btn{
+        position: relative;
+        background: white;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 68px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .reset-course-text{
+        color: #01CEB6;
+        text-align: center;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .delete-course-btn{
+        position: relative;
+        background: white;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 68px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .delete-course-text{
+        color: #DD1919;
+        text-align: center;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .delete-course-btn:hover{
+        background: #DD1919;
+
+        .delete-course-text{
+            color: white;
+        }
+
+    }
+
+    .reset-course-btn:hover{
+        background: #01CEB6;
+
+        .reset-course-text{
+            color: white;
+        }
+
+    }
+
+    .delete-course-btn:active, .reset-course-btn:active{
+        filter: brightness(90%);
+    }
+
+    .cancel-btn{
+        position: relative;
+        margin: 0 auto;
+        background: #DD1919;
+        border: 0px solid transparent;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 108px;
+        transition: all 0.2s ease;
+        color: white;
+        text-align: center;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .cancel-btn:hover{
+        background: white;
+        color: #DD1919;
+    }
+
+    .cancel-btn:active{
+        filter: brightness(90%);
+    }
+
+
+}
+
+@media (min-width: 576px){
+
+    .chapter-container{
+        width: 60%;
+    }
+
+    .delete-or-reset-course-btn-container{
+        width: 45%;
+    }
+
+    .delete-or-reset-or-cancel-course-container{
+        width: 70%;
+    }
+    
+}
+
+@media (min-width: 768px){
+
+    .chapter-container{
+        width: 60%;
+    }
+
+    .delete-or-reset-course-btn-container{
+        width: 45%;
+    }
+    
+    
+    .delete-or-reset-or-cancel-course-container{
+        width: 70%;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .chapter-container{
+        width: 40%;
+    }
+
+    .delete-or-reset-course-btn-container{
+        width: 35%;
+    }
+
+
+    .delete-or-reset-or-cancel-course-container{
+        width: 35%;
+    }
+
+
+}

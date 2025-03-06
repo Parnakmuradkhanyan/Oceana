@@ -1,0 +1,420 @@
+
+@media (min-width: 100px) {
+    .navbar-div{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        padding-top: 56px;
+        padding-left: 18px;
+        padding-right: 30px;
+        padding-bottom: 8px;
+        background: #B4E7E1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 3;
+    }
+    .navbar-items{
+        width: 100%;
+        display: flex;
+    }
+
+    .menu-button-link{
+        display: flex;
+        position: relative;
+        margin-top: 14px;
+        margin-left: auto;
+        height: 18px;
+        display: flex;
+        z-index: 3;
+    }
+    .menu-button-icon{
+        width: 29px;
+        height: 18px;
+        background-image: url('../icons/menu-not-active-icon.svg');
+        transition: all 0.2s ease;
+    }
+    .menu-button-icon:hover{
+        width: 30px;
+        height: 18px;
+        background-image: url('../icons/menu-active-icon.svg');
+        transition: all 0.2s ease;
+    }
+
+    .menu-button-icon:active{
+        filter: brightness(90%);
+    }
+
+    .decor-navbar{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .arrow-courses-container{
+        position: relative;
+        margin-top: 146px;
+        margin-left: 4px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .link-arrow-back-home{
+        display: flex;
+        align-items: center;
+        transition: all 0.2s ease;
+    }
+
+    .link-arrow-back-home:hover{
+        filter: brightness(90%);
+    }
+
+    .link-arrow-back-home:active{
+        filter: brightness(80%);
+    }
+
+
+    .courses-text{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .book-add-new-course-and-name-course-container{
+        position: relative;
+        margin: 0 auto;
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+
+    }
+
+    .book-of-course-image{
+        width: 284px;
+        height: 225px;
+        position: relative;
+        margin: 0 auto;
+
+    }
+
+    .add-new-course-and-name-of-course-container{
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+
+    }
+
+    .course-name{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .add-new-course-btn{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #01CEB6;
+        padding-left: 1px;
+        padding-right: 6px;
+        border: 0px solid transparent;
+        border-radius: 12px;
+        transition: all 0.2s ease;
+        text-decoration: none;
+        z-index: 2;
+    }
+
+    .add-new-course-btn-decor-left{
+        margin-bottom: -1px;
+    }
+
+    .add-new-course-btn-decor-right{
+        margin-bottom: -3px;
+    }
+
+    .add-new-course-btn-text-container{
+        position: relative;
+        margin: 0 auto;
+        margin-left: 0px;
+        margin-right: 4px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .add-new-course-text{
+        color: white;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        margin-bottom: 0px;
+        transition: all 0.2s ease;
+    }
+
+    .add-new-course-icon{
+        width: 14px;
+        height: 14px;
+        background-image: url('../icons/add-new-course-btn-icon-not-active.svg');
+        background-size: contain;
+        transition: all 0.2s ease;
+    }
+
+    .add-new-course-btn:hover{
+        border: 2px solid #01CEB6;
+        background: white;
+
+        .add-new-course-text{
+            color: #01CEB6;
+        }
+
+        .add-new-course-icon{
+            width: 14px;
+            height: 14px;
+            background-size: contain;
+            background-image: url('../icons/add-new-course-btn-icon-active.svg');
+        }
+    }
+
+    .add-new-course-btn:active{
+        filter: brightness(90%);
+    }
+
+    .chapters-list{
+        position: relative;
+        margin: 0 auto;
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        justify-content: center;
+        padding-left: 0px;
+        margin-bottom: 200px;
+
+    }
+
+    .chapter-container{
+        width: 90%;
+        list-style-type: none;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 32px;
+        background: #AAE7DF;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 34px;
+        padding-right: 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+    .img-name-container{
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+        align-items: center;
+    }
+
+    .arrow-back-to-chapter-list-link{
+        position: relative;
+        display: flex;
+        margin-left: auto;
+        transition: all 0.2s ease;
+    }
+
+    .arrow-back-to-chapter-list-link:hover{
+        filter: brightness(110%);
+    }
+
+    .arrow-back-to-chapter-list-link:hover{
+        filter: brightness(90%);
+    }
+
+
+    .pic-of-chapter{
+        width: 60px;
+        height: 60px;
+    }
+
+    .chapter-name-and-topics-amount-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chapter-name{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: -5px;
+        transition: all 0.2s ease;
+    }
+
+    .topics-amount-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .number-of-topics{
+        color: #41958B;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 0px;
+        transition: all 0.2s ease;
+    }
+
+    .topics-text{
+        color: #41958B;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 0px;
+        transition: all 0.2s ease;
+    }
+
+
+    .chapter-check-topics-link{
+        text-decoration: none;
+    }
+
+    .img-bottom-decor{
+        width: 100%;
+        height: 179px;
+        position: fixed;
+        bottom: -4px;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        background-image: url('../img/register-bottom-decor.svg');
+        background-size: contain;
+        z-index: 3;
+    }
+
+    .topics-list{
+        width: 90%;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 200px;
+        background: #D6FBF6;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding-left: 34px;
+        padding-bottom: 42px;
+        padding-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .topic-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .topic-image-div{
+        position: relative;
+        width: 43px;
+        height: 43px;
+        background: #EA6161;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .topic-pic-number{
+        color: white;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 0px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+
+    .topic-number-topic-name-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .topic-number{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+
+    .topic-name{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (min-width: 576px){
+
+    .chapter-container{
+        width: 60%;
+    }
+
+    .topics-list{
+        width: 60%;
+    }
+    
+}
+
+@media (min-width: 768px){
+
+    .chapter-container{
+        width: 60%;
+    }
+    .topics-list{
+        width: 60%;
+    }
+    
+}
+
+@media (min-width: 992px) {
+
+    .chapter-container{
+        width: 40%;
+    }
+    .topics-list{
+        width: 40%;
+    }
+
+
+}

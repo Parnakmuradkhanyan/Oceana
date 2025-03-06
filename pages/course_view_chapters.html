@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="../js/manifest.webmanifest">
+    <link rel="shortcut icon" href="../icons/website-icon.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../icons/website-icon.svg">
+    <link rel="apple-touch-icon" sizes="152x152" href="../icons/152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../icons/167.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/course_view_chapters_style.css">
+    <title>Ocean of the Knowledge - Course</title>
+</head>
+<body>
+    <div class="navbar-div">
+        <div class="navbar-items">
+            <a href="./home.html" class="logo-link-home"><img src="../img/menu-logo.svg" alt="Logo" class="logo-navbar"></a>
+            <a href="./menu.html" class="menu-button-link"><div class="menu-button-icon"></div></a>
+        </div>
+        <img src="../img/menu-bottom-decor.svg" alt="" class="decor-navbar">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="arrow-courses-container">
+                    <a href="./home.html" class="link-arrow-back-home"><img src="../icons/arrow-back-to-main-page.svg" alt="" class="icon-arrow-back-home"></a>
+                    <p class="courses-text">Courses</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="book-and-name-course-container">
+                    <img src="../img/course-bookk-opened-decor.svg" alt="" class="book-of-course-image">
+                    <p class="course-name">English for Adults</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="chapters-list">
+
+                    <a href="./course_view_topics.html" class="chapter-check-topics-link"><li class="chapter-container">
+                        <img src="../icons/a1-level-icon-course.svg" alt="" class="pic-of-chapter">
+                        <div class="chapter-name-and-topics-amount-container">
+                            <p class="chapter-name">A1 Level Lessons</p>
+                            <div class="topics-amount-container">
+                                <p class="number-of-topics">41</p>
+                                <p class="topics-text">Topics</p>
+                            </div>
+                        </div>
+                        <div class="completed-chapter-div">
+                            <p class="completed-text">Completed</p>
+                        </div>
+                    </li></a>
+
+                    <a href="#" class="chapter-check-topics-link"><li class="chapter-container">
+                        <img src="../icons/a2-level-icon-course.svg" alt="" class="pic-of-chapter">
+                        <div class="chapter-name-and-topics-amount-container">
+                            <p class="chapter-name">A2 Level Lessons</p>
+                            <div class="topics-amount-container">
+                                <p class="number-of-topics">41</p>
+                                <p class="topics-text">Topics</p>
+                            </div>
+                        </div>
+                    </li></a>
+
+                    <a href="#" class="chapter-check-topics-link"><li class="chapter-container">
+                        <img src="../icons/b1-level-icon-course.svg" alt="" class="pic-of-chapter">
+                        <div class="chapter-name-and-topics-amount-container">
+                            <p class="chapter-name">B1 Level Lessons</p>
+                            <div class="topics-amount-container">
+                                <p class="number-of-topics">41</p>
+                                <p class="topics-text">Topics</p>
+                            </div>
+                        </div>
+                    </li></a>
+
+                    <a href="#" class="chapter-check-topics-link"><li class="chapter-container">
+                        <img src="../icons/b2-level-icon-course.svg" alt="" class="pic-of-chapter">
+                        <div class="chapter-name-and-topics-amount-container">
+                            <p class="chapter-name">B2 Level Lessons</p>
+                            <div class="topics-amount-container">
+                                <p class="number-of-topics">41</p>
+                                <p class="topics-text">Topics</p>
+                            </div>
+                        </div>
+                    </li></a>
+
+                    <a href="#" class="chapter-check-topics-link"><li class="chapter-container">
+                        <img src="../icons/c1-level-icon-course.svg" alt="" class="pic-of-chapter">
+                        <div class="chapter-name-and-topics-amount-container">
+                            <p class="chapter-name">C1 Level Lessons</p>
+                            <div class="topics-amount-container">
+                                <p class="number-of-topics">41</p>
+                                <p class="topics-text">Topics</p>
+                            </div>
+                        </div>
+                    </li></a>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <button onclick="showConfirmation()" class="delete-or-reset-course-btn-container">
+                    <p class="delete-or-reset-course-text">Delete or Reset Course</p>
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="img-bottom-decor"></div>
+
+    <div class="delete-or-reset-or-cancel-course-container">
+        <div class="decor-div"></div>
+        <p class="are-you-sure-about-that-question">Are you sure about that?</p>
+
+        <div class="reset-delete-course-container">
+            <a href="#" class="reset-course-btn">
+                <p class="reset-course-text">Reset Course</p>
+            </a>
+            <a href="#" class="delete-course-btn">
+                <p class="delete-course-text">Delete Course</p>
+            </a>
+        </div>
+
+        <button onclick="hideConfirmation()" class="cancel-btn">Cancel</button>
+
+    </div>
+
+    <script src="./js/manifest.webmanifest"></script>
+    <script src="../js/course_view_chapters.js"></script>
+
+
+</body>
+</html>
