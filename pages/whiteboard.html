@@ -27,25 +27,51 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12"></div>
+            <div class="col-12">
+                <div class="arrow-whiteboard-container">
+                    <a href="./home.html" class="link-arrow-back-home"><img src="../icons/arrow-back-to-main-page.svg" alt="" class="icon-arrow-back-home"></a>
+                    <p class="whiteboard-text">Whiteboard</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 container-for-drawing">
+
+            </div>
         </div>
     </div>
 
-    <div class="container color-palette-to-choose-container">
-        <div class="row colors-row">
-            <div class="col-2 color-to-choose"></div>
+    <div class="color-palette-to-choose-container">
+        <div class="colors-row">
+            <button id="red" class="color-to-choose red"></button>
+            <button id="orange" class="color-to-choose orange"></button>
+            <button id="yellow" class="color-to-choose yellow"></button>
+            <button id="green" class="color-to-choose green"></button>
+            <button id="cyan" class="color-to-choose cyan"></button>
+            <button id="sky-blue" class="color-to-choose sky-blue"></button>
+            <button id="dark-blue" class="color-to-choose dark-blue"></button>
+        </div>
+        <div class="colors-row">
+            <button id="purple" class="color-to-choose purple"></button>
+            <button id="violet" class="color-to-choose violet"></button>
+            <button id="pink" class="color-to-choose pink"></button>
+            <button id="brown" class="color-to-choose brown"></button>
+            <button id="white" class="color-to-choose white"></button>
+            <button id="black" class="color-to-choose black"></button>
+            <button id="grey" class="color-to-choose grey"></button>
         </div>
     </div>
 
     <div class="panel-of-instruments">
-        <button class="brush-tool-btn"><div class="brush-tool-icon"></div></button>
-        <button class="rubber-tool-btn"><div class="rubber-tool-icon"></div></button>
-        <button class="current-color-tool-btn"><div class="current-color"></div></button>
-        <button class="text-tool-btn"><div class="text-tool-icon"></div></button>
-        <button class="clear-all-tool-btn"><div class="clear-all-tool-icon"></div></button>
+        <button id="brush-tool" class="brush-tool-btn"><div class="brush-tool-icon"></div></button>
+        <button id="rubber-tool" class="rubber-tool-btn"><div class="rubber-tool-icon"></div></button>
+        <button id="curren-color-tool" class="current-color-tool-btn"><div class="current-color"></div></button>
+        <button id="text-tool" class="text-tool-btn"><div class="text-tool-icon"></div></button>
+        <button id="clear-all-tool" class="clear-all-tool-btn"><div class="clear-all-tool-icon"></div></button>
 
     </div>
 
+    <script src="../js/whiteboard.js"></script>
     <script src="../js/manifest.webmanifest"></script>
 </body>
 </html>
