@@ -31,4 +31,34 @@ function checkQuestionAnswer() {
     });
 }
 
+function checkTranslationAnswer() {
+    const translations = {
+        "zoo": "зоопарк",
+        "lion": "лев",
+        "tiger": "тигр", 
+        "panda": "панда", 
+        "bear": "ведмідь", 
+        "elephant": "слон", 
+        "fox": "лисиця", 
+        "monkey": "мавпа", 
+        "giraffe": "жираф", 
+        "snake": "змія", 
+        "crocodile": "крокодил", 
+        "turtle": "черепаха"
+    };
+
+    document.querySelectorAll(".translation-word-container").forEach(container => {
+        const input = container.querySelector(".input-for-user-to-write");
+        const word = input.id;
+        const userTranslation = input.value.trim().toLowerCase(); // Переводимо введення до нижнього регістру
+        const correctTranslation = translations[word].toLowerCase(); // Переводимо правильний переклад до нижнього регістру
+
+        if (userTranslation === correctTranslation) {
+            input.style.border = "1px solid #01D664"; // зелений кордон
+        } else {
+            input.style.border = "1px solid #DD1919"; // червоний кордон
+        }
+    });
+}
+
 

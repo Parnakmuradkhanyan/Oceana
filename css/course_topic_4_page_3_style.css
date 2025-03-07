@@ -136,11 +136,6 @@
     }
 
 
-    .text-reading-container{
-        position: relative;
-        margin: 0 auto;
-    }
-
     .text-picture{
         position: relative;
         margin: 0 auto;
@@ -151,143 +146,73 @@
         background-size: cover;
     }
 
-    .text-title{
-        position: relative;
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 18px;
-        margin-bottom: 8px;
-        color: black;
-        font-family: 'Baloo 2', sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 0px;
-    }
 
-    .text-reading{
-        position: relative;
-        margin: 0 auto;
-        width: 98%;
-        color: black;
-        font-family: 'Baloo 2', sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 0px;
-    }
-
-
-    .test-container-div{
-        position: relative;
-        margin-left: 12px;
-    }
-
-    .questions-container{
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .quesion-container{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .question-text{
-        color: black;
-        font-family: 'Baloo 2', sans-serif;
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 15px;
-    }
-
-    .answers-container{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        padding-left: 0px;
-    }
-
-    .answer-container{
-        display: flex;
-        flex-direction: row;
-        gap: 6px;
+    .big-exercise{
         align-items: start;
     }
 
+    .sentences-container{
+        width: 98%;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding-left: 20px;
+        padding-top: 54px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        gap: 25px;
+        background: #FFF0D3;
+        box-shadow: 0px 4px 10px rgba(225, 206, 168, 0.79);
+    }
 
-.answer-test-checkbox {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid transparent;
-    background: #B4E7E1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    cursor: pointer;
-    position: relative;
-}
+    .paper-fold-div{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 365px;
+        height: 562px;
+        background-image: url('../img/paper-fold-make-the-sentences-decor.svg');
+        background-size: cover;
+    }
 
-.answer-test-checkbox.checked::before {
-    content: '';
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: #01CEB6;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+    .sentence-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
 
-.answer-test-checkbox.correct {
-    background: #01D664;
-}
+    .input-for-user-to-write{
+        width: 30%;
+        background: white;
+        border: 1.5px solid #B0935B;
+        border-radius: 8px;
+        padding: 4px 28px;
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 500;
+    }
 
-.answer-test-checkbox.correct::before {
-    content: '';
-    background-image: url('../icons/checkbox-correct-answer-icon.svg');
-    background-size: contain;
-    width: 12px;
-    height: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.answer-test-checkbox.incorrect {
-    background: #DD1919;
-}
-
-.answer-test-checkbox.incorrect::before {
-    content: '';
-    background-image: url('../icons/checkbox-incorrect-answer-icon.svg');
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-    
-
-    .answer-text{
+    .sentence-text-before-gap, .sentence-text-after-gap{
+        width: 15%;
         color: black;
         font-family: 'Baloo 2', sans-serif;
         font-size: 17px;
         font-weight: 500;
         margin-bottom: 0px;
     }
+    .sentence-text-after-gap{
+        width: 50%;
+    }
 
-    .check-the-question-answer-btn{
+    .check-the-answers-btn{
         position: relative;
-        margin-right: auto;
+        margin: 0 auto;
         margin-top: 20px;
         background: #01CEB6;
         border: 0px solid transparent;
@@ -300,30 +225,26 @@
         font-weight: 700;
         transition: all 0.2s ease;
     }
-
-    .check-the-question-answer-btn:hover{
+    
+    .check-the-answers-btn:hover{
         background: white;
         color: #01CEB6;
         border: 2px solid #01CEB6;
     }
 
-    .check-the-question-answer-btn:active{
+    .check-the-answers-btn:active{
         background: white;
         color: #01CEB6;
         border: 2px solid #01CEB6;
         filter: brightness(90%);
     }
 
-    .big-exercise{
-        align-items: start;
-    }
 
     .turn-to-pages-container{
         position: relative;
         width: fit-content;
         margin-left: 24px;
-        margin-top: 50px;
-        margin-bottom: 100px;
+        margin-top: 30px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -365,115 +286,6 @@
         }
     }
 
-    .writing-exericse-pic{
-        position: relative;
-        margin: 0 auto;
-        width: 98%;
-        height: 223px;
-        background-image: url('../img/writing-pic.jpg');
-        border-radius: 3px;
-        background-size: cover;
-        
-    }
-
-    .writing-textarea{
-        position: relative;
-        margin: 0 auto;
-        margin-top: 18px;
-        background: #FFF0D3;
-        border-radius: 3px;
-        border: 0px solid transparent;
-        width: 98%;
-        height: 223px;
-        padding-top: 16px;
-        padding-left: 16px;
-        color: black;
-        font-family: 'Baloo 2', sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        margin-bottom: 0px;
-    }
-
-    .translation-words-list{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        padding-left: 4px;
-        gap: 30px;
-        color: black;
-        font-family: 'Baloo 2', sans-serif;
-        font-size: 17px;
-        font-weight: 500;
-        margin-bottom: 0px;
-    }
-
-    .translation-word-container{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
-    }
-
-    
-    .translation-row{
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 16px;
-    }
-
-
-    .word-to-translate-text{
-        color: black;
-        font-family: 'Baloo 2', sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 0px;
-    }
-
-    .input-for-user-to-write{
-        width: 50%;
-        background: #FFF0D3;
-        border: 1.5px solid #B0935B;
-        border-radius: 8px;
-        padding: 4px 28px;
-        color: black;
-        font-family: 'Baloo 2', sans-serif;
-        font-size: 18px;
-        text-align: center;
-        font-weight: 500;
-    }
-
-    .check-the-translation{
-        position: relative;
-        margin: 0 auto;
-        margin-top: 20px;
-        background: #01CEB6;
-        border: 0px solid transparent;
-        border-radius: 8px;
-        padding: 6px 14px;
-        color: white;
-        text-align: center;
-        font-family: 'Baloo 2', sans-serif;
-        font-size: 16px;
-        font-weight: 700;
-        transition: all 0.2s ease;
-    }
-
-    .check-the-translation:hover{
-        background: white;
-        color: #01CEB6;
-        border: 2px solid #01CEB6;
-    }
-
-    .check-the-translation:active{
-        background: white;
-        color: #01CEB6;
-        border: 2px solid #01CEB6;
-        filter: brightness(90%);
-    }
-
 
     .page-number-text{
         position: relative;
@@ -492,33 +304,88 @@
         padding: 10px 11px;
         display: flex;
         margin-left: auto;
-        background: #01CEB6;
+        background: #80D4CB;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
-        transition: all 0.2s ease;
+
     }
 
     .turn-to-next-page-icon{
         width: 8px;
         height: 14px;
-        background-image: url('../icons/turn-to-next-page-not-active-icon.svg');
-        transition: all 0.2s ease;
-    }
-    
-    .turn-to-next-page-btn:hover{
-        background: white;
-        .turn-to-next-page-icon{
-            background-image: url('../icons/turn-to-next-page-active-icon.svg');
-        }
+        background-image: url('../icons/unavialable-turn-to-next-page-icon.svg');
     }
 
-    .turn-to-next-page-btn:active{
+    .finish-column{
+        display: flex;
+        justify-content: center;
+    }
+
+    .finish-the-topic-btn{
+        position: relative;
+        margin: 0 auto;
+        margin-top: 44px;
+        margin-bottom: 50px;
+        background: #0edb2a;
+        border: 0px solid transparent;
+        border-radius: 12px;
+        padding: 5px 48px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        transition: all 0.2s ease;
+
+    }
+
+    .finish-the-topic-btn:hover{
         background: white;
+        border: 3px solid #0edb2a;
+        color: #0edb2a;
+    }
+
+    .finish-the-topic-btn:active{
+        background: white;
+        border: 3px solid #0edb2a;
+        color: #0edb2a;
         filter: brightness(90%);
-        .turn-to-next-page-icon{
-            background-image: url('../icons/turn-to-next-page-active-icon.svg');
-        }
-       
+    }
+
+    .game-frame{
+        position: relative;
+        margin: 0 auto;
+        width: 98%;
+        height: 263px;
+    }
+
+    .speaking-picture{
+        position: relative;
+        margin: 0 auto;
+        width: 98%;
+        height: 223px;
+        background-image: url('../img/speaking-pic.png');
+        background-size: cover;
+        border-radius: 3px;
+    }
+
+    .questions-for-speaking-list{
+        position: relative;
+        margin-left: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        list-style-type: none;
+        padding-left: 0px;
+    }
+
+    .speaking-quesion{
+        color: black;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 0px;
     }
     
 
@@ -528,83 +395,89 @@
 @media (min-width: 576px){
 
 
-    .text-picture{
-        width: 94%;
-        height: 443px;
-    }
-
-    .text-reading{
+    .sentences-container{
         width: 94%;
     }
 
-    .writing-exericse-pic{
-        width: 94%;
-        height: 443px;
-    }
-
-    .writing-textarea{
-        width: 94%;
-        height: 443px;
-    }
-
+    
     .input-for-user-to-write{
         width: 20%;
     }
-    
+
+    .sentence-text-before-gap{
+        width: 8%;
+    }
+
+    .game-frame{
+        position: relative;
+        margin: 0 auto;
+        width: 94%;
+        height: 443px;
+    }
+
+    .speaking-picture{
+        width: 94%;
+        height: 443px;
+    }
 }
 
 @media (min-width: 768px){
 
 
-    .text-picture{
-        width: 94%;
-        height: 443px;
-    }
 
-    .text-reading{
+    .sentences-container{
         width: 94%;
     }
 
-    .writing-exericse-pic{
-        width: 94%;
-        height: 443px;
-    }
-
-    .writing-textarea{
-        width: 94%;
-        height: 443px;
-    }
-
+       
     .input-for-user-to-write{
         width: 20%;
+    }
+
+    .sentence-text-before-gap{
+        width: 8%;
+    }
+
+    .game-frame{
+        position: relative;
+        margin: 0 auto;
+        width: 94%;
+        height: 443px;
+    }
+
+    .speaking-picture{
+        width: 94%;
+        height: 443px;
     }
 
 }
 
 @media (min-width: 992px) {
 
-
-    .text-picture{
-        width: 54%;
-        height: 443px;
-    }
-
-    .text-reading{
-        width: 54%;
-    }
-
-    .writing-exericse-pic{
-        width: 54%;
-        height: 443px;
-    }
-
-    .writing-textarea{
-        width: 54%;
-        height: 443px;
-    }
-
     .input-for-user-to-write{
-        width: 13%;
+        width: 20%;
     }
+
+    .sentences-container{
+        width: 54%;
+    }
+
+    .sentence-text-before-gap{
+        width: 7%;
+    }
+
+    .game-frame{
+        position: relative;
+        margin: 0 auto;
+        width: 54%;
+        height: 443px;
+    }
+
+    .speaking-picture{
+        width: 54%;
+        height: 443px;
+    }
+
+    
 
 }

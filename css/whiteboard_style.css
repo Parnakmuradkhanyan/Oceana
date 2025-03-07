@@ -1,0 +1,177 @@
+
+@media (min-width: 100px) {
+    .navbar-div{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        padding-top: 56px;
+        padding-left: 18px;
+        padding-right: 30px;
+        padding-bottom: 8px;
+        background: #B4E7E1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 3;
+    }
+    .navbar-items{
+        width: 100%;
+        display: flex;
+    }
+
+    .menu-button-link{
+        display: flex;
+        position: relative;
+        margin-top: 14px;
+        margin-left: auto;
+        height: 18px;
+        display: flex;
+        z-index: 3;
+    }
+    .menu-button-icon{
+        width: 29px;
+        height: 18px;
+        background-image: url('../icons/menu-not-active-icon.svg');
+        transition: all 0.2s ease;
+    }
+    .menu-button-icon:hover{
+        width: 30px;
+        height: 18px;
+        background-image: url('../icons/menu-active-icon.svg');
+        transition: all 0.2s ease;
+    }
+
+    .menu-button-icon:active{
+        filter: brightness(90%);
+    }
+
+
+    .decor-navbar{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .panel-of-instruments{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        background: #BFF1EB;
+        padding: 5px 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .brush-tool-btn{
+        width: 48px;
+        height: 48px;
+        background: #01CEB6;
+        border: 0px solid transparent;
+        border-radius: 50%;
+        padding: 13px 12px;
+    }
+
+    .brush-tool-icon{
+        background-image: url('../icons/brush-whiteboard-not-active.svg');
+        background-size: cover;
+        width: 24px;
+        height: 22px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .rubber-tool-btn{
+        width: 48px;
+        height: 48px;
+        background: #01CEB6;
+        border: 0px solid transparent;
+        border-radius: 50%;
+        padding: 12px 13px;
+    }
+
+    .rubber-tool-icon{
+        background-image: url('../icons/rubber-whiteboard-not-active.svg');
+        background-size: cover;
+        width: 22px;
+        height: 24px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .text-tool-btn{
+        width: 48px;
+        height: 48px;
+        background: #01CEB6;
+        border: 0px solid transparent;
+        border-radius: 50%;
+        padding: 15px 14px;
+    }
+
+    .text-tool-icon{
+        background-image: url('../icons/text-tool-whiteboard-not-active.svg');
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .clear-all-tool-btn{
+        width: 48px;
+        height: 48px;
+        background: #01CEB6;
+        border: 0px solid transparent;
+        border-radius: 50%;
+        padding: 15px 11px;
+    }
+
+    .clear-all-tool-icon{
+        background-image: url('../icons/clear-all-whiteboard-not-active.svg');
+        background-size: contain;
+        width: 26px;
+        height: 18px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .current-color-tool-btn{
+        position: relative;
+        background: #BFF1EB;
+        width: 94px;
+        height: 94px;
+        border: 0px solid transparent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .current-color{
+        background: #000000;
+        width: 84px;
+        height: 84px;
+        border: 0px solid transparent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+@media (min-width: 576px){
+    
+
+}
+
+@media (min-width: 768px){
+
+
+}
+
+@media (min-width: 992px) {
+
+
+}
