@@ -7,9 +7,9 @@
 
     "icons":[
         {
-            "src": "../icons/website-icon.svg",
+            "src": "../icons/icon.png",
             "sizes": "512x512",
-            "type": "image/svg"
+            "type": "image/png"
         }
     ],
     "name": "Ocean of the Knowledge",

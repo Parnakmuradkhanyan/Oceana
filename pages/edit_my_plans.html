@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="../js/manifest.webmanifest">
+    <link rel="shortcut icon" href="../icons/website-icon.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../icons/website-icon.svg">
+    <link rel="apple-touch-icon" sizes="152x152" href="../icons/152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../icons/167.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/edit_my_plans_style.css">
+    <title>Ocean of the Knowledge - Edit My Plans</title>
+</head>
+<body>
+    <div class="navbar-div">
+        <div class="navbar-items">
+            <a href="./home.html" class="logo-link-home"><img src="../img/menu-logo.svg" alt="Logo" class="logo-navbar"></a>
+            <a href="./menu.html" class="menu-button-link"><div class="menu-button-icon"></div></a>
+        </div>
+        <img src="../img/menu-bottom-decor.svg" alt="" class="decor-navbar">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="arrow-my-plans-container">
+                    <a href="./home.html" class="link-arrow-back-home"><img src="../icons/arrow-back-to-main-page.svg" alt="" class="icon-arrow-back-home"></a>
+                    <p class="my-plans-text">My Plans</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form action="./home.html" class="my-plans-book-form">
+                    <div class="turn-date-date-month-decoration-container">
+                        <button onclick="" class="turn-to-previous-date-link"></button>
+                        <div class="date-and-month-container">
+                            <p class="date" id="date">28</p>
+                            <p class="month" id="month">February</p>
+                        </div>
+                        <img src="../img/my-plans-book-ocean-decor.svg" alt="" class="decoration-for-page">
+                        <button onclick="" class="turn-to-next-date-link"></button>
+                    </div>
+
+                    <ul class="plans-for-today" id="plansForToday">
+
+                        <li class="plan-container" id="planContainer">
+
+                            <div class="time-container">
+    
+                                <div class="time-begin-container">
+                                    <input type="text" class="hour-begin-input" id="hourBegin" required>
+                                    <p class="two-dots-text">:</p>
+                                    <input type="text" class="minute-begin-input" id="minuteBegin" required>
+                                </div>
+    
+                                <p class="miuns-till-time">-</p>
+    
+                                <div class="time-finish-container">
+                                    <input type="text" class="hour-finish-input" id="hourFinish" required>
+                                    <p class="two-dots-text">:</p>
+                                    <input type="text" class="minute-finish-input" id="minuteFinish" required>
+                                </div>
+    
+                            </div>
+    
+                            <input type="text" class="activity-name-input" id="activityName" required>
+                        </li>
+                    
+                    </ul>
+                    <button type="button" class="delete-last-plan-btn" id="deleteLastPlan"><div class="delete-plan-icon"></div></button>
+                    <button type="button" class="add-plan-btn" id="addNewPlan"><div class="add-plan-icon"></div></button>
+    
+    
+                    <div class="notes-container">
+                        <p class="notes-title">Notes</p>
+                        <input type="text" name="notes" id="userNotesForDay" class="notes">
+                    </div>
+
+                </div>
+
+                <button type="submit" class="save-the-changes-btn">
+                    <p class="save-the-changes-text">Save the changes</p>
+                    <div class="save-the-changes-btn-icon"></div>
+                </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="img-bottom-decor"></div>
+
+    <script src="../js/edit_my_plans.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
