@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="../js/manifest.webmanifest">
+    <link rel="shortcut icon" href="../icons/website-icon.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../icons/website-icon.svg">
+    <link rel="apple-touch-icon" sizes="152x152" href="../icons/152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../icons/167.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/edit_my_profile_style.css">
+    <title>Ocean of the Knowledge - Edit My Profile</title>
+</head>
+<body>
+    <div class="navbar-div">
+        <div class="navbar-items">
+            <a href="./home.html" class="logo-link-home"><img src="../img/menu-logo.svg" alt="Logo" class="logo-navbar"></a>
+            <a href="./menu.html" class="menu-button-link"><div class="menu-button-icon"></div></a>
+        </div>
+        <img src="../img/menu-bottom-decor.svg" alt="" class="decor-navbar">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="arrow-my-profile-container">
+                    <a href="./my_profile.html" class="link-arrow-back-home"><img src="../icons/arrow-back-to-main-page.svg" alt="" class="icon-arrow-back-home"></a>
+                    <p class="my-profile-text">Cancel</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form action="../pages/my_profile.html" class="user-edit-info">
+                    
+                    <div class="user-pic-col">
+                        <div class="profile-cover-image-div">
+                            <img id="profile-cover-image-preview" class="profile-cover-image-preview">
+                            <input type="file" name="user_cover_photo" class="custom-file-input" id="userCoverPhoto" accept="image/*" onchange="previewImageCover(event)">
+                            <label for="userCoverPhoto" class="custom-file-label profile-cover-change-btn"><div class="change-profile-pic-btn-icon"></div></label>
+                        </div>
+                        
+                    </div>
+
+                    <div class="form-inputs-div">
+
+                        <div class="name-input-div">
+                            <label for="nameInput" class="name-input-label">Name</label>
+                            <input type="text" placeholder="James" class="name-input" name="nameInput" id="nameInput" required>
+                        </div>
+
+                        <div class="surname-input-div">
+                            <label for="surnameInput" class="surname-input-label">Surname</label>
+                            <input type="text" placeholder="Smith" class="surname-input" name="surnameInput" id="surnameInput" required>
+                        </div>
+
+                        <div class="email-input-div">
+                            <label for="emailInput" class="email-input-label">Email</label>
+                            <input type="email" placeholder="name@mail.com" class="email-input" name="emailInput" id="emailInput" required>
+                        </div>
+    
+                        <div class="telephone-number-input-div">
+                            <label for="telephoneNumberInput" class="telephone-number-input-label">Telephone Number</label>
+                            <input type="text" placeholder="+474227398" class="telephone-number-input" name="telephoneNumberInput" id="telephoneNumberInput" required>    
+                        </div>
+
+                        <div class="gender-date-of-birth-language-inputs-container">
+                            <div class="gender-select-div">
+                                <label for="genderSelect" class="gender-select-label">Gender</label>
+                                <select class="gender-select" id="genderSelect" name="genderSelect" required>
+                                    <option selected>M/F</option>
+                                    <option value="M">M</option>
+                                    <option value="F">F</option>
+                                  </select>
+                            </div>
+
+                            <div class="date-of-birth-input-div">
+                                <label for="dateOfBirth" class="date-of-birth-input-label">Date of Birth</label>
+                                <input type="date" class="date-of-birth-input" required>
+                            </div>
+
+                            <div class="language-select-div">
+                                <label for="languageSelect" class="language-select-label">Language</label>
+                                <select class="language-select" id="languageSelect" name="languageSelect" required>
+                                    <option selected>ENG</option>
+                                    <option value="ENG">ENG</option>
+                                    <option value="ESP">ESP</option>
+                                    <option value="ITA">ITA</option>
+                                    <option value="FRE">FRE</option>
+                                    <option value="GER">GER</option>
+                                    <option value="UKR">UKR</option>
+                                  </select>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                   
+                    <button type="submit" class="save-the-changes-btn">
+                        <p class="save-the-changes-text">Save the changes</p>
+                        <div class="save-the-changes-btn-icon"></div>
+                    </button>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="img-bottom-decor"></div>
+
+
+    <script src="../js/edit_my_profile.js"></script>
+
+</body>
+</html>

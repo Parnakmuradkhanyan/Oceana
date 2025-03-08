@@ -395,6 +395,7 @@
         flex-direction: column;
         gap: 10px;
         justify-content: center;
+        margin-bottom: 200px;
     }
 
     .recently-viewed-course-cover{
@@ -438,9 +439,68 @@
         display: flex;
         background-image: url('../img/register-bottom-decor.svg');
         background-size: contain;
+        z-index: 2;
+    }
+
+    .edit-profile-link-btn{
+        position: fixed;
+        bottom: 146px;
+        left: 50%;
+        border-radius: 8px;
+        transform: translate(-50%, 0%);
+        background: #01CEB6;
+        padding: 8px 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 11px;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.2s ease;
         z-index: 3;
     }
 
+    .edit-my-profile-text{
+        color: white;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 0px;
+        transition: all 0.2s ease;
+    }
+
+    .icon-edit-my-profile{
+        width: 18px;
+        height: 18px;
+        background-image: url('../icons/edit-my-profile-btn-icon-not-active.svg');
+        background-size: cover;
+        transition: all 0.2s ease;
+    }
+
+    .edit-profile-link-btn:hover{
+        background: white;
+        border: 3px solid #01CEB6;
+        .edit-my-profile-text{ color: #01CEB6;}
+        .icon-edit-my-profile{
+            width: 18px;
+            height: 18px;
+            background-image: url('../icons/edit-my-profile-btn-icon-active.svg');
+            background-size: cover;
+        }
+        
+    }
+
+    .edit-profile-link-btn:active{
+        background: white;
+        border: 3px solid #01CEB6;
+        filter: brightness(90%);
+        .edit-my-profile-text{ color: #01CEB6;}
+        .icon-edit-my-profile{
+            width: 18px;
+            height: 18px;
+            background-image: url('../icons/edit-my-profile-btn-icon-active.svg');
+            background-size: cover;
+        }
+    }
 
 }
 

@@ -77,15 +77,13 @@
         border: 1px solid #0E5A42;
         border-radius: 6px;
         padding-top: 6px;
-        padding-top: 6px;
+        padding-bottom: 6px;
         padding-left: 14px;
         color: black;
         font-family: 'Baloo 2', sans-serif;
         font-size: 18px;
         font-weight: 500;
     }
-    
-    
     
     .login-div{
         position: relative;
