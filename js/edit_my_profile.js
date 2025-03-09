@@ -3,6 +3,7 @@ class ProfileEditModel {
 }
 
 class ProfileEditView {
+
     constructor() {
         this.userPhoto = document.getElementById('userPhoto');
         this.previewImage = document.getElementById('profile-image-preview');
@@ -25,6 +26,7 @@ class ProfileEditView {
 }
 
 class ProfileEditController {
+    
     constructor(model, view) {
         this.model = model;
         this.view = view;

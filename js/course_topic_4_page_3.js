@@ -1,4 +1,5 @@
 function checkTheCompleteAnswer() {
+
     const translations = {
         "lion": "lion",
         "tiger": "tiger", 
@@ -8,16 +9,18 @@ function checkTheCompleteAnswer() {
     };
 
     document.querySelectorAll(".sentence-container").forEach(container => {
-        const input = container.querySelector(".input-for-user-to-write");
-        const word = input.id;
-        const userTranslation = input.value.trim().toLowerCase(); // Переводимо введення до нижнього регістру
-        const correctTranslation = translations[word].toLowerCase(); // Переводимо правильний переклад до нижнього регістру
+
+        const inputCompete = container.querySelector(".input-for-user-to-write");
+        const word = inputCompete.id;
+        const userTranslation = inputCompete.value.trim().toLowerCase();
+        const correctTranslation = translations[word].toLowerCase();
 
         if (userTranslation === correctTranslation) {
-            input.style.border = "1px solid #01D664"; // зелений кордон
+            inputCompete.style.border = "2px solid #01D664";
         } else {
-            input.style.border = "1px solid #DD1919"; // червоний кордон
+            inputCompete.style.border = "2px solid #DD1919";
         }
+
     });
 }
 
